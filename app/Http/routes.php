@@ -12,6 +12,7 @@ use Illuminate\Http\Request;
 |
 */
 
+
 function is_pjax() {
     if (isset($_SERVER['HTTP_X_PJAX']) && strtolower($_SERVER['HTTP_X_PJAX']) == 'true') {
         return true;
@@ -25,15 +26,33 @@ Route::get('/', function() {
     $pictures = array('goldengate.jpg', 'grass.jpg', 'hiker.jpg', 'mountain.jpg', 'sunset.jpg');
 
     $picture = $pictures[random_int(0, 4)];
+    $random = rand();
+
+    $text = 'PJAX Content';
 
     if (is_pjax()) {
-        return view('welcome')->with('picture', $picture);
+        return view('welcome')
+            ->with('text', $text)
+            ->with('picture', $picture)
+            ->with('random', $random);
 ;
     }
         //return redirect('/');
-        return view('welcome')->with('picture', $picture);
+        return view('welcome')
+            ->with('text', $text)
+            ->with('picture', $picture)
+            ->with('random', $random);
 
 });
+
+Route::get('/about', function() {
+    $text = 'A simple Laravel - Pjax demo application.';
+    
+    return view('about')->with('text', $text);
+
+});
+
+
 
 /*
 Route::get('/explore', function() {

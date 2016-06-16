@@ -2,7 +2,8 @@
 
 @section('content')
 
-@include('nav', ['active' => 'home'])
+@include('nav', ['active' => 'about'])
+
 
     <div class='container'>
         <div class="wide">
@@ -20,7 +21,7 @@
     </div>
 
     <div id='main'>
-        @include('random')
+        This is a Laravel - Pjax demo application. It uses a nav bar and links to show how to integerate Pjax with Laravel.
     </div>
 
 @endsection
