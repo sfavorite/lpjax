@@ -117,6 +117,11 @@
         $(document).on('pjax:start', function() { NProgress.start(); });
         $(document).on('pjax:end',   function() { NProgress.done();  });
 
+        $('ul.nav > li').click(function(e) {
+            $('ul.nav > li').removeClass('active');
+            $(this).addClass('active');
+        });
+
 
     });
     </script>
