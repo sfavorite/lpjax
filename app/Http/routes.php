@@ -29,14 +29,15 @@ Route::get('/', function() {
     $random = rand();
 
     $text = 'PJAX Content';
-
+/*
     if (is_pjax()) {
         return view('welcome')
             ->with('text', $text)
             ->with('picture', $picture)
             ->with('random', $random);
-;
+
     }
+    */
         //return redirect('/');
         return view('welcome')
             ->with('text', $text)
