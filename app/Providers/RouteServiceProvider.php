@@ -29,12 +29,20 @@ class RouteServiceProvider extends ServiceProvider
         parent::boot($router);
     }
     */
-    public function boot(Router $router)
+    /*public function boot(Router $router)
     {
         //
 
         parent::boot();
     }
+    */
+    public function boot()
+    {
+        //
+
+        parent::boot();
+    }
+
     /**
      * Define the routes for the application.
      *
