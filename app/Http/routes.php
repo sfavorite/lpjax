@@ -48,7 +48,7 @@ Route::get('/', function() {
 
 Route::get('/about', function() {
     $text = 'A simple Laravel - Pjax demo application.';
-    
+
     return view('about')->with('text', $text);
 
 });
