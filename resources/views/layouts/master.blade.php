@@ -76,10 +76,9 @@
 
         .pjax-text {
             text-align: center;
-            font-weight: 100;
-            font-size: 96px;
+            font-weight: bold;
+            font-size: 3em;
             font-family: 'Lato';
-
         }
 
     </style>
@@ -97,10 +96,12 @@
 
 
         if ($.support.pjax) {
-
+            // Don't scroll when a pjax request is made
+            $.pjax.defaults.scrollTo = false;
             $.pjax.defaults.timeout = 1000; // time in milliseconds
         }
 
+        // Give a visual feedback 
         $(document).on('pjax:start', function() { NProgress.start(); });
         $(document).on('pjax:end',   function() { NProgress.done();  });
 
