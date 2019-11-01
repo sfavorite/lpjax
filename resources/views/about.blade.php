@@ -18,8 +18,12 @@
         </div>
     </div>
 
-    <div id='main'>
-        This is a Laravel - Pjax demo application. It uses a nav bar and links to show how to integerate Pjax with Laravel.
+    <div class="offset-2 col-8" id='main'>
+        <p>
+            This is a Laravel - Pjax demo application. It shows how to integerate Pjax with Laravel.
+            When you click the 'number' or 'picture' links on the first page only the number or picture changes
+            and the pages is not refreshed!
+        </p>
     </div>
 
 @endsection
