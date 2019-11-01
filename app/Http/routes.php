@@ -23,21 +23,15 @@ function is_pjax() {
 
 
 Route::get('/', function() {
+    /* Pictures to send via ajax requests selected randomly */
     $pictures = array('goldengate.jpg', 'grass.jpg', 'hiker.jpg', 'mountain.jpg', 'sunset.jpg');
 
     $picture = $pictures[random_int(0, 4)];
+    /* Send a random number via ajax */
     $random = rand();
 
     $text = 'PJAX Content';
-/*
-    if (is_pjax()) {
-        return view('welcome')
-            ->with('text', $text)
-            ->with('picture', $picture)
-            ->with('random', $random);
 
-    }
-    */
         //return redirect('/');
         return view('welcome')
             ->with('text', $text)
