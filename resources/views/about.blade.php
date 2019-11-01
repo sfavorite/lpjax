@@ -24,6 +24,10 @@
             When you click the 'number' or 'picture' links on the first page only the number or picture changes
             and the pages is not refreshed!
         </p>
+        <p>
+            The 'home' and 'about' menu items are pjax enabled but the 'Pjax - Laravel' link will cause a full reload.
+            On the home page there are two links one for a random picture the other a random number. When clicked these will use pjax.
+        </p>
     </div>
 
 @endsection

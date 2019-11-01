@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- JQuery library -->
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
     <!-- pjax plugin -->
     <script src="js/jquery.pjax.js" defer></script>
 
@@ -101,7 +102,7 @@
             $.pjax.defaults.timeout = 1000; // time in milliseconds
         }
 
-        // Give a visual feedback 
+        // Give a visual feedback
         $(document).on('pjax:start', function() { NProgress.start(); });
         $(document).on('pjax:end',   function() { NProgress.done();  });
 
