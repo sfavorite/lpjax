@@ -13,7 +13,7 @@
 
 
     <div>
-        <div class="text-center my">
+        <div class="text-center">
             <h1>{{ $text }}</h1>
         </div>
     </div>

@@ -75,6 +75,7 @@
             left: 50%;
         }
 
+
         .pjax-text {
             text-align: center;
             font-weight: bold;
