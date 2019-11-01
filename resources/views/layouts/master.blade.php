@@ -11,7 +11,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 
     <!-- pjax plugin -->
-    <script src="js/jquery.pjax.js" defer></script>
+    <script src="{{asset('js/jquery.pjax.js') }}" defer></script>
 
     <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
@@ -22,7 +22,7 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <script src='js/nprogress.js'></script>
+    <script src="{{ asset('js/nprogress.js') }}"></script>
     <link rel='stylesheet' href='css/nprogress.css'/>
 
 
