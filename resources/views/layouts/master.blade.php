@@ -32,11 +32,6 @@
             margin: 0px;
         }
 
-        body {
-            padding-top: 0px;
-        }
-
-
         .number {
             font-size: 30px;
             color: rgb(255, 255, 255);
@@ -67,12 +62,6 @@
             text-align: center;
         }
 
-        .line {
-            padding-top: 20px;
-            white-space: no-wrap;
-            overflow: hidden;
-            text-align: center;
-        }
 
         .my {
             font-family: 'Lato';
