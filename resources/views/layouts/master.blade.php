@@ -88,12 +88,14 @@
 
     $(document).ready(function() {
 
+        // Tell pjax which links are to be 'pjaxed' by attribute 
         $(document).pjax('a[data-pjax]');
 
         //$('#testing').pjax('.js-pjax')
 
-        $('#picture').pjax('a', '#picture')
-        $('#number').pjax('a', '#number')
+        // Instead of by attribute pjax can be done by id
+        //$('#picture').pjax('a', '#picture')
+        //$('#number').pjax('a', '#number')
 
 
 
